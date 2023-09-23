@@ -39,12 +39,7 @@ const App = () => {
   return (
     <div>
       <Section title="Please leave feedback">
-        <FeedbackOptions
-          good={good}
-          neutral={neutral}
-          bad={bad}
-          onLeaveFeedback={handleChange}
-        />
+        <FeedbackOptions onLeaveFeedback={handleChange} />
         {countTotalFeedback() > 0 ? (
           <Statistics
             good={good}
